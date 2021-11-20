@@ -1,0 +1,372 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  display: flex;
+  width: 130px;
+  height: 35px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 0px;
+  padding-bottom: 2px;
+  font-size: 13px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  font-family: Prata;
+  font-weight: 500;
+  /* background-color: #000000; */
+  background-color: #6cbbff;
+  color: #ffffff;
+}
+
+.button:hover {
+  box-shadow: 0 0 5px 5px #6cbbff;
+}
+
+/* @media screen and (min-width: 320px) and (max-width: 768px) {
+  .main {
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 319px;
+  }
+} */
+.photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/lauracrop.jpg);
+}
+
+.main-head__name {
+  font-family: Literata;
+  margin-left: 20px;
+}
+.main-head {
+  display: flex;
+}
+
+.main-container {
+  display: block;
+  width: 380px;
+}
+
+.about-myself {
+  position: relative;
+}
+
+.about-myself::before {
+  content: '';
+  display: flex;
+  width: 4px;
+  height: 100%;
+  /* background-color: #445964; */
+  border-left-width: 3px; /* Толщина линии внизу */
+  border-left-style: dotted; /* Стиль линии внизу */
+  border-left-color: #445964; /* Цвет линии внизу */
+
+  position: absolute;
+  right: 418px;
+}
+
+.edu-prof::after {
+  content: '09.2010 - 06.2015';
+  font-family: Alice;
+  text-align: center;
+  color: #445964;
+  font-size: 13px;
+  display: flex;
+  position: relative;
+  top: 6px;
+  right: 291px;
+  width: 100px;
+  height: 30px;
+}
+
+.subhead {
+  font-family: Alice;
+  font-size: 20px;
+  color: #445964;
+  margin-left: 20px;
+  margin-bottom: 130px;
+}
+
+.title_style {
+  font-family: Prata;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.sub-title {
+  font-family: Alice;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.main-text-style {
+  font-family: Alice;
+  font-weight: 400;
+  font-size: 17px;
+  text-align: left;
+  line-height: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.edu-place {
+  font-family: Alice;
+  font-weight: 400;
+  font-size: 21px;
+  color: #445964;
+}
+
+.edu-info {
+  text-align: left;
+}
+
+.edu-title {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  right: 55px;
+}
+
+.edu-prof {
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 46px;
+}
+
+.edu-prof::before {
+  content: '';
+  display: flex;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: #445964;
+  margin-right: 33px;
+}
+
+.exp-prof {
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 46px;
+}
+
+.exp-prof::before {
+  content: '';
+  display: flex;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: #445964;
+  margin-right: 33px;
+}
+
+.exp-prof::after {
+  content: '06.2015 - 09.2015';
+  font-family: Alice;
+  text-align: center;
+  color: #445964;
+  font-size: 13px;
+  display: flex;
+  position: relative;
+  top: 6px;
+  right: 296px;
+  width: 98px;
+  height: 30px;
+}
+
+.hexp-prof {
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 46px;
+}
+
+.hexp-prof::before {
+  content: '';
+  display: flex;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: #445964;
+  margin-right: 33px;
+}
+
+.hexp-prof::after {
+  content: '02.2017 - 02.2018';
+  font-family: Alice;
+  text-align: center;
+  color: #445964;
+  font-size: 13px;
+  display: flex;
+  position: relative;
+  top: 6px;
+  right: 355px;
+  width: 98px;
+  height: 30px;
+}
+
+.vol-prof {
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 46px;
+}
+
+.vol-prof::before {
+  content: '';
+  display: flex;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: #445964;
+  margin-right: 33px;
+}
+
+.vol-prof::after {
+  content: '09.2016 - 10.2017';
+  font-family: Alice;
+  text-align: center;
+  color: #445964;
+  font-size: 13px;
+  display: flex;
+  width: 97px;
+  height: 30px;
+  position: absolute;
+  left: -100px;
+  top: 4px;
+}
+
+.main {
+  display: flex;
+  margin: 0 auto;
+  width: 767px;
+  margin-top: 50px;
+}
+
+.main-personal {
+  display: block;
+  width: 220px;
+
+  background-color: #6cbbff;
+}
+.myself-title__text {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  right: 55px;
+  margin-bottom: 15px;
+}
+
+.svg-size {
+  margin-right: 25px;
+
+  fill: #ffffff;
+  box-sizing: border-box;
+}
+
+.svg-background {
+  background-color: #445964;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 100%;
+}
+
+.exp-title {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  right: 55px;
+}
+
+.vol-title {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  right: 55px;
+}
+
+.text-part {
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 46px;
+}
+
+.text-part::before {
+  content: '';
+  display: flex;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: #445964;
+  margin-right: 33px;
+}
+
+/* .myself-title__text::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 30px;
+  background-image: url(../img/download.svg);
+  background-repeat: no-repeat;
+  background-clip: content-box;
+} */
